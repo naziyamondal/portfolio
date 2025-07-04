@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="portfolio-container">
+    <ul class="navlist">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- HOME SECTION -->
+    <div class="left-container">
+        <div class="icons">
+  <a href="https://instagram.com/naziyaa._.09" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://linkedin.com/in/naziya-mondal-2085a6347" target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/naziyamondal" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
+
+        
+        <div class="content">
+            <p class="intro">Hi! I am <span>Naziya Mondal</span></p>
+            <h1>Student</h1>
+            <p class="detail">I am a final year BSc IT student with a strong interest in web development and programming. As a fresher, I am eager to learn and grow in the tech industry.</p>
+            <div class="btn-container">
+  <a href="Naziya_Parveen_IT_CV (1).docx" download class="btn">Download CV</a>
+  <button class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+    Contact Detail
+  </button>
+</div>
+
+        </div>
+    </div>
+    <div class="right-container"></div>
+
+    <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</div>
+
+<!-- ABOUT SECTION (Now moved to bottom) -->
+<!--<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="photo.jpeg" alt="profile_photo">
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="about-container">
+   <!-- <div class="about-image">
+      <img src="photo.jpeg" alt="profile photo" />
+    </div>-->
+    <div class="about-content">
+      <h1>About Me</h1>
+      <p>
+I'm an enthusiastic developer with a background in Information Technology. I enjoy solving real-world problems through code and creating interactive, responsive websites. Whether it's front-end design or back-end logic, I'm committed to writing clean, efficient, and maintainable code. Currently, I'm expanding my skills in full-stack development and constantly learning new technologies to stay ahead in the tech world.      </p>
+
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+        <p class="tab-links" onclick="openTab('education')">Education</p>
+      </div>
+
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>HTML/CSS/JS</span><br>Frontend Development</li>
+          <li><span>C / C++</span><br>Programming Languages</li>
+          <li><span>Java</span><br>OOPs & Desktop Applications</li>
+          <li><span>Database</span><br>SQL</li>
+
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>2Current</span><br>Fresher</li>
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>2023 – 2026</span><br>TY BSc IT - SIES College of Commerce and Economoics</li>
+          <li><span>2021 – 2023</span><br>12th Science (67.17%) - National Sarvodaya Junior College</li>
+          <li><span>2020 – 2021</span><br>10th (90.40%) - Crescent High School</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <div class="projects-container">
+    <h1>My Projects</h1>
+    <div class="project-list">
+      <div class="project-box">
+        <img src="project1.jpeg" alt="Project 1">
+        <h3>Quiz Application</h3>
+        <p>A simple Java-based Q&A app for college students.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-box">
+        <img src="project2.jpeg" alt="Project 2">
+        <h3>HTML-CSS Website</h3>
+        <p>A static website built using HTML & CSS with responsive design.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skill">
+  <div class="skill-container">
+    <h1>My Skills</h1>
+    <div class="skill-list">
+      <div class="skill-box">
+        <i class="fas fa-code"></i>
+        <h2>HTML5,CSS & Javascript</h2>
+        <p>A frontend developer specializes in crafting the user interface and experience of websites and applications.</p>
+      </div>
+      <div class="skill-box">
+        <i class="fa-solid fa-c"></i>
+        <h2>C/C++/java Language</h2>
+        <p>A C/C++/Java coder is a skilled programmer proficient in writing efficient, high-performance code using the C ,C++ and java programming languages.</p>
+      </div>
+      <div class="skill-box">
+        <i class="fa-solid fa-database"></i>
+        <h2>SQL</h2>
+        <p>An SQL coder specializes in crafting database queries, scripts, and procedures using Structured Query Language (SQL). </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h1>Contact Me</h1>
+      <p><i class="fas fa-paper-plane"></i> naziyaamondal@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 9819442577</p>
+      <a href="Naziya_Parveen_IT_CV (1).docx" download class="btn">Download CV</a>
+
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+  <p>© 2025 Naziya Mondal. All rights reserved.</p>
+</footer>
+
+<script>
+  function openTab(tabName) {
+    const tabLinks = document.querySelectorAll(".tab-links");
+    const tabContents = document.querySelectorAll(".tab-contents");
+
+    tabLinks.forEach(link => link.classList.remove("active-link"));
+    tabContents.forEach(content => content.classList.remove("active-tab"));
+
+    document.getElementById(tabName).classList.add("active-tab");
+    event.currentTarget.classList.add("active-link");
+  }
+</script>
+
+</body>
+</html>
